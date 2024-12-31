@@ -1,0 +1,49 @@
+.calendar-popup {
+  max-width: 800px;
+  width: 90vw;
+  padding: 2rem;
+}
+
+.calendar-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.calendar-legend {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.legend-item {
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
+}
+
+.header-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.header-button:hover {
+  background: var(--background-hover);
+  transform: scale(1.1);
+}
+
+.calendar-button {
+  margin-right: 0.5rem;
+}

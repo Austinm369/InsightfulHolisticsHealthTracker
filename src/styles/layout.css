@@ -1,0 +1,23 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.widgets-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.quotes-section {
+  grid-column: 1 / -1;
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .widgets-container {
+    grid-template-columns: 1fr;
+  }
+}

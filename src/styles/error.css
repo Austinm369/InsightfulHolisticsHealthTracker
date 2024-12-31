@@ -1,0 +1,22 @@
+.error-fallback {
+  padding: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  background-color: var(--background-light);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.error-fallback button {
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+}
+
+.error-fallback button:hover {
+  background-color: var(--color-primary-dark);
+}

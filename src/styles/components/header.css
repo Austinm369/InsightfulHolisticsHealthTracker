@@ -1,0 +1,40 @@
+.app-header {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.header-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.theme-toggle,
+.settings-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.theme-toggle:hover,
+.settings-button:hover {
+  background: var(--background-hover);
+}
+
+/* Dark mode specific styles */
+:root.dark .header-title {
+  color: var(--text-primary-dark);
+}

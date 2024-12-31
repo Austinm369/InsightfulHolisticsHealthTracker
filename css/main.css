@@ -1,0 +1,113 @@
+/* Base styles and CSS reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #2563eb;
+  --background: #ffffff;
+  --text: #0f172a;
+  --border: #e2e8f0;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --radius: 0.5rem;
+  --spacing: 1rem;
+}
+
+/* Dark theme */
+.dark {
+  --primary: #3b82f6;
+  --background: #0f172a;
+  --text: #f8fafc;
+  --border: #334155;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app-header {
+  padding: var(--spacing);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing);
+}
+
+.trackers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing);
+  margin-top: var(--spacing);
+}
+
+.tracker {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  box-shadow: var(--shadow);
+}
+
+.tracker-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) / 2);
+}
+
+.tracker-value {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.progress-bar {
+  height: 0.5rem;
+  background: var(--border);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.tracker-controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.theme-toggle {
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  background: transparent;
+}

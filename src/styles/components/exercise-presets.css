@@ -1,0 +1,33 @@
+.exercise-presets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.exercise-preset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--background-secondary);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.exercise-preset:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.preset-icon {
+  font-size: 2rem;
+}
+
+.preset-name {
+  font-weight: 500;
+  text-align: center;
+}

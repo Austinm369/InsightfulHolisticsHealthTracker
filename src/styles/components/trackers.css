@@ -1,0 +1,32 @@
+.manage-trackers-btn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--background-secondary);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.manage-trackers-btn:hover {
+  border-color: var(--primary);
+  background: var(--background-hover);
+  transform: translateY(-1px);
+}
+
+.add-exercise-btn {
+  padding: 0.5rem 1rem;
+  background: var(--background-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-exercise-btn:hover {
+  border-color: var(--primary);
+  background: var(--background-hover);
+}

@@ -1,0 +1,69 @@
+:root {
+  /* Core colors */
+  --royal-blue-50: #eff6ff;
+  --royal-blue-100: #dbeafe;
+  --royal-blue-500: #3b82f6;
+  --royal-blue-600: #2563eb;
+  --royal-blue-700: #1d4ed8;
+  
+  --sky-blue-50: #f0f9ff;
+  --sky-blue-100: #e0f2fe;
+  --sky-blue-500: #0ea5e9;
+  --sky-blue-600: #0284c7;
+  
+  --mint-green-50: #ecfdf5;
+  --mint-green-100: #d1fae5;
+  --mint-green-500: #10b981;
+  --mint-green-600: #059669;
+  
+  --forest-green-50: #f0fdf4;
+  --forest-green-100: #dcfce7;
+  --forest-green-500: #22c55e;
+  --forest-green-600: #16a34a;
+  
+  /* Light theme defaults */
+  --background-primary: var(--royal-blue-50);
+  --background-secondary: white;
+  --background-tertiary: var(--sky-blue-50);
+  
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  
+  --accent-primary: var(--royal-blue-600);
+  --accent-secondary: var(--sky-blue-500);
+  --accent-success: var(--mint-green-500);
+  --accent-forest: var(--forest-green-600);
+  
+  /* Widget specific */
+  --widget-background: white;
+  --widget-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --widget-border: 1px solid var(--royal-blue-100);
+  
+  /* Progress bars */
+  --progress-bg: var(--royal-blue-50);
+  --progress-fill: var(--royal-blue-500);
+}
+
+/* Dark theme */
+:root.dark-mode {
+  --background-primary: #0f172a;
+  --background-secondary: #1e293b;
+  --background-tertiary: #334155;
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #e2e8f0;
+  
+  --accent-primary: var(--royal-blue-500);
+  --accent-secondary: var(--sky-blue-500);
+  --accent-success: var(--mint-green-500);
+  --accent-forest: var(--forest-green-500);
+  
+  /* Widget specific */
+  --widget-background: #1e293b;
+  --widget-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --widget-border: 1px solid #334155;
+  
+  /* Progress bars */
+  --progress-bg: #334155;
+  --progress-fill: var(--royal-blue-500);
+}

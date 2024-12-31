@@ -1,0 +1,17 @@
+.quote-card {
+  background: white;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--spacing-md);
+}
+
+.quote-text {
+  font-style: italic;
+  margin-bottom: var(--spacing-sm);
+}
+
+.quote-author {
+  color: var(--text-color);
+  font-weight: 500;
+}

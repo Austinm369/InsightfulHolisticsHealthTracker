@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insightful Holistics Health Tracker</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+  <div id="error-boundary" style="display: none">
+    <div class="error-content">
+      <h2>Something went wrong</h2>
+      <p class="error-message"></p>
+      <button onclick="window.location.reload()">Reload Application</button>
+    </div>
+  </div>
+
+  <div id="app">
+    <header class="app-header">
+      <h1>Insightful Holistics Health Tracker</h1>
+      <div class="header-controls">
+        <button id="theme-toggle" aria-label="Toggle theme">🌞</button>
+      </div>
+    </header>
+
+    <main class="app-container">
+      <section id="quotes" class="quotes-section"></section>
+      <div class="trackers-grid">
+        <section id="water-tracker" class="widget"></section>
+        <section id="step-tracker" class="widget"></section>
+        <section id="macro-tracker" class="widget"></section>
+        <section id="add-exercise" class="widget add-tracker">
+          🏋️‍♂️🤸‍♀️ Add Exercise
+        </section>
+        <section id="add-tracker" class="widget add-tracker">
+          ➕ Add Custom Tracker
+        </section>
+        <section id="manage-trackers" class="widget add-tracker">
+          ➖ Hide Trackers
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

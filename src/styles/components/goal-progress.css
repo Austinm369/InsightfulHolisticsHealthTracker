@@ -1,0 +1,36 @@
+.goal-progress {
+  background: var(--background-secondary);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.progress-header h3 {
+  color: var(--text);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.progress-display {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.progress-stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Progress ring color override */
+.progress-ring-progress {
+  stroke: var(--progress-color, var(--primary));
+}

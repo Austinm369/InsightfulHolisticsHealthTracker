@@ -1,0 +1,56 @@
+.widget {
+  background: var(--widget-background);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  box-shadow: var(--widget-shadow);
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.widget-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.widget-icon {
+  font-size: 1.5rem;
+}
+
+.widget-goal {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.widget-progress {
+  height: 6px;
+  background: var(--background-hover);
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--button-light-bg);
+  transition: width 0.3s ease;
+}
+
+.widget-controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+/* Dark mode */
+:root.dark-mode .progress-bar {
+  background: var(--button-dark-bg);
+}

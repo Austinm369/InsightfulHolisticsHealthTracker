@@ -1,0 +1,17 @@
+.add-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  border: 2px dashed var(--border);
+  transition: all 0.2s ease;
+}
+
+.add-tracker:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--background-secondary);
+}

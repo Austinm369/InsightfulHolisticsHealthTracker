@@ -1,0 +1,77 @@
+.menu-bar {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1000;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  background: var(--menu-bg);
+  backdrop-filter: blur(8px);
+  box-shadow: var(--menu-shadow);
+  transition: all 0.3s ease;
+}
+
+.menu-bar.collapsed .menu-buttons {
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-buttons {
+  display: flex;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  opacity: 1;
+  width: auto;
+  overflow: hidden;
+}
+
+.menu-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.menu-button:hover {
+  background: var(--accent-blue-hover);
+  transform: scale(1.05);
+}
+
+.menu-toggle {
+  composes: menu-button;
+  background: var(--accent-mint, #4ade80);
+  z-index: 2;
+}
+
+.menu-toggle:hover {
+  background: var(--accent-mint-hover, #22c55e);
+}
+
+/* Dark mode specific overrides */
+:root.dark-mode .menu-button {
+  background: var(--accent-blue);
+}
+
+:root.dark-mode .menu-button:hover {
+  background: var(--accent-blue-hover);
+}
+
+:root.dark-mode .menu-toggle {
+  background: var(--accent-green);
+}
+
+:root.dark-mode .menu-toggle:hover {
+  background: var(--accent-green-hover);
+}

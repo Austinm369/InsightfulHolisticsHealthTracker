@@ -1,0 +1,26 @@
+.progress-ring {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-ring-circle {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-background {
+  stroke: var(--border);
+}
+
+.progress-ring-progress {
+  stroke: var(--primary);
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.progress-ring-text {
+  position: absolute;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+}

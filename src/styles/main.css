@@ -1,0 +1,124 @@
+/* Base styles and CSS reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Core colors */
+  --sky-blue-500: #0ea5e9;
+  --sky-blue-600: #0284c7;
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+  --green-100: #dcfce7;
+  --green-600: #16a34a;
+
+  /* Light theme */
+  --primary: var(--sky-blue-600);
+  --background: var(--gray-50);
+  --background-secondary: white;
+  --text: var(--gray-900);
+  --text-secondary: var(--gray-800);
+  --border: var(--gray-100);
+  --accent: var(--green-600);
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --radius: 0.5rem;
+  --spacing: 1rem;
+}
+
+/* Dark theme */
+.dark {
+  --primary: var(--sky-blue-500);
+  --background: var(--gray-900);
+  --background-secondary: var(--gray-800);
+  --text: var(--gray-50);
+  --text-secondary: var(--gray-100);
+  --border: var(--gray-800);
+  --accent: var(--green-100);
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app-header {
+  padding: var(--spacing);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-secondary);
+}
+
+.app-header h1 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing);
+}
+
+.trackers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing);
+  margin-top: var(--spacing);
+}
+
+.widget {
+  background: var(--background-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  box-shadow: var(--shadow);
+}
+
+.widget h2 {
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.header-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header-controls button {
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: var(--background);
+  color: var(--text);
+  font-size: 1.25rem;
+}
+
+.header-controls button:hover {
+  background: var(--border);
+}

@@ -1,0 +1,81 @@
+.macro-widget {
+  padding: 1rem;
+}
+
+.macro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.macro-card {
+  background: var(--background-secondary);
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.macro-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.macro-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.macro-value {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.calories-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.calorie-card {
+  text-align: center;
+  padding: 1rem;
+  background: var(--background-secondary);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.calorie-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.calorie-value {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.macro-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.macro-controls button {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.macro-controls button:hover {
+  opacity: 0.9;
+}

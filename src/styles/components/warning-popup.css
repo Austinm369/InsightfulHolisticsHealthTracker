@@ -1,0 +1,14 @@
+.warning-popup-content {
+  color: var(--color-danger, #dc2626);
+}
+
+.warning-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.warning-message {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}

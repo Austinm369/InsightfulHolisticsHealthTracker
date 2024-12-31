@@ -1,0 +1,33 @@
+/* Add to existing widgets.css */
+.widget-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.widget-value {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.btn-increment,
+.btn-decrement {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--primary);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-increment:hover,
+.btn-decrement:hover {
+  opacity: 0.9;
+}
+
+.btn-decrement {
+  background: var(--text-secondary);
+}

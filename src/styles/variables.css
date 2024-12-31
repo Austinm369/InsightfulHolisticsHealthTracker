@@ -1,0 +1,13 @@
+:root {
+  /* Previous variables remain unchanged */
+  
+  /* Button Colors */
+  --button-light-bg: #38bdf8; /* sky blue */
+  --button-light-hover: #0284c7;
+  --button-light-text: #ffffff;
+  --button-dark-bg: #2563eb; /* royal blue */
+  --button-dark-hover: #1d4ed8;
+  --button-dark-text: #ffffff;
+  
+  /* Rest of the variables remain unchanged */
+}
